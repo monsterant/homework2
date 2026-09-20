@@ -31,6 +31,9 @@ public class Post {
 
     private LocalDateTime updatedAt;
 
+    @Column(nullable = false)
+    private boolean deleted = false;
+
     public Post(String title, String content, Member author) {
         this.title = title;
         this.content = content;
@@ -47,6 +50,11 @@ public class Post {
         if (content != null) {
             this.content = content;
         }
+        this.updatedAt = LocalDateTime.now();
+    }
+
+    public void markDeleted() {
+        this.deleted = true;
         this.updatedAt = LocalDateTime.now();
     }
 

@@ -38,46 +38,29 @@ Content-Type: application/json
 GET http://localhost:8080/post/detail/1
 
 
-
-
-### 생성
-POST http://localhost:8080/todo
+### 댓글 생성
+POST http://localhost:8080/comment/post/1
 Content-Type: application/json
 
 {
-  "title": "자바 공부하기"
+  "content": "첫 번째 댓글입니다.",
+  "parentId": null
 }
 
-
-### Todo 단건 조회 성공
-GET http://localhost:8080/todo/1
-
-### Todo 단건 조회 실패 - 없는 id
-GET http://localhost:8080/todo/999
-
-### Todo 생성
-POST http://localhost:8080/todo
+### 대댓글 생성
+POST http://localhost:8080/comment/post/1
 Content-Type: application/json
 
 {
-  "title": "자바 테스트2"
+  "content": "첫 번째 대댓글입니다.",
+  "parentId": 1
 }
 
-### Todo 수정 - title만 변경
-PATCH http://localhost:8080/todo/1
+### 게시글 제목/내용 수정
+PATCH http://localhost:8080/post/1
 Content-Type: application/json
 
 {
-  "title": "Spring 공부하기"
-}
-
-### Todo 삭제
-DELETE http://localhost:8080/todo/1
-
-### Todo 생성 공백
-POST http://localhost:8080/todo
-Content-Type: application/json
-
-{
-  "title": "                               "
+  "title": "수정된 제목",
+  "content": "수정된 내용입니다."
 }

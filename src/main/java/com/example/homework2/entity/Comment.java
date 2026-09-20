@@ -31,19 +31,22 @@ public class Comment {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
+    @Column(nullable = false)
     private LocalDateTime updatedAt;
 
     @Column(nullable = false)
     private boolean deleted = false;
 
-    public Comment(String content, Member author, Post post, Comment parent, LocalDateTime createdAt) {
+    public Comment(String content, Member author, Post post, Comment parent) {
         this.content = content;
         this.author = author;
+        this.post = post;
+        this.parent = parent;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
 
-    public void deleted() {
+    public void markDeleted() {
         this.deleted = true;
         this.updatedAt = LocalDateTime.now();
     }
