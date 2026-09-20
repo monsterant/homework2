@@ -1,5 +1,5 @@
 ### 회원가입
-POST http://localhost:8080/members
+POST http://localhost:8080/member
 Content-Type: application/json
 
 {
@@ -24,6 +24,19 @@ GET http://localhost:8080/authCustom/me
 
 ### 로그아웃
 POST http://localhost:8080/authCustom/logout
+
+### 게시글 생성
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "title": "첫 번째 게시글",
+  "content": "게시글 작성 테스트입니다."
+}
+
+### 게시글 단건 조회
+GET http://localhost:8080/post/detail/1
+
 
 
 

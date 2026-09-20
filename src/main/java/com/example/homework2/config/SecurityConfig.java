@@ -27,10 +27,11 @@ public class SecurityConfig {
                 )
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/h2-console/**").permitAll()
-                        .requestMatchers("/members/**").permitAll()
+                        .requestMatchers("/member/**").permitAll()
                         .requestMatchers("/authCustom/**").permitAll()
-                        .requestMatchers("/posts/**").permitAll()
-                        .requestMatchers("/comments/**").permitAll()
+                        .requestMatchers("/post").permitAll()
+                        .requestMatchers("/post/**").permitAll()
+                        .requestMatchers("/comment/**").permitAll()
                         .anyRequest().authenticated()
                 );
 
