@@ -1,4 +1,4 @@
-package com.example.todo.dto;
+package com.example.homework2.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

@@ -1,4 +1,4 @@
-package com.example.todo.entity;
+package com.example.homework2.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

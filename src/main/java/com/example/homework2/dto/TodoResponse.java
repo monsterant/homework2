@@ -1,6 +1,6 @@
-package com.example.todo.dto;
+package com.example.homework2.dto;
 
-import com.example.todo.entity.Todo;
+import com.example.homework2.entity.Todo;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

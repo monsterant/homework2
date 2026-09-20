@@ -1,11 +1,11 @@
-package com.example.todo.service;
+package com.example.homework2.service;
 
-import com.example.todo.dto.TodoCreateRequest;
-import com.example.todo.dto.TodoResponse;
-import com.example.todo.dto.TodoUpdateRequest;
-import com.example.todo.entity.Todo;
-import com.example.todo.exception.TodoNotFoundException;
-import com.example.todo.repository.TodoRepository;
+import com.example.homework2.dto.TodoCreateRequest;
+import com.example.homework2.dto.TodoResponse;
+import com.example.homework2.dto.TodoUpdateRequest;
+import com.example.homework2.entity.Todo;
+import com.example.homework2.exception.TodoNotFoundException;
+import com.example.homework2.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

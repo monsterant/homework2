@@ -1,4 +1,4 @@
-package com.example.todo.exception;
+package com.example.homework2.exception;
 
 import lombok.Getter;
 

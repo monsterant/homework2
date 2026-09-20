@@ -1,4 +1,4 @@
-package com.example.todo.exception;
+package com.example.homework2.exception;
 
 public class TodoNotFoundException extends RuntimeException {
     public TodoNotFoundException(long id) {

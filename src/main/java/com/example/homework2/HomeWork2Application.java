@@ -1,13 +1,13 @@
-package com.example.todo;
+package com.example.homework2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TodoApplication {
+public class HomeWork2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TodoApplication.class, args);
+		SpringApplication.run(HomeWork2Application.class, args);
 	}
 
 }

@@ -1,3 +1,15 @@
+### 회원가입
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "12345678",
+  "nickname": "tester"
+}
+
+
+
 ### 생성
 POST http://localhost:8080/todo
 Content-Type: application/json

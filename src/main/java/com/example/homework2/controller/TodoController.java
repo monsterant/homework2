@@ -1,9 +1,9 @@
-package com.example.todo.controller;
+package com.example.homework2.controller;
 
-import com.example.todo.dto.TodoCreateRequest;
-import com.example.todo.dto.TodoResponse;
-import com.example.todo.dto.TodoUpdateRequest;
-import com.example.todo.service.TodoService;
+import com.example.homework2.dto.TodoCreateRequest;
+import com.example.homework2.dto.TodoResponse;
+import com.example.homework2.dto.TodoUpdateRequest;
+import com.example.homework2.service.TodoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
