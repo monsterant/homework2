@@ -18,3 +18,8 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+
+server:
+  servlet:
+    session:
+      timeout: 60m

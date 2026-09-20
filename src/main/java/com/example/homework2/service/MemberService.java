@@ -27,7 +27,7 @@ public class MemberService {
         String encodedPassword = passwordEncoder.encode(request.getPassword());
 
         // 3. Member 생성 후 저장
-        Member newMember = new Member(request.getEmail(), encodedPassword, request.getPassword());
+        Member newMember = new Member(encodedPassword, request.getEmail(), request.getNickname());
         memberRepository.save(newMember);
     };
 
